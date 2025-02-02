@@ -20,7 +20,7 @@ async fn main() {
     let args = Args::parse();
 
     let server = websocket::Server::new(SocketAddr::from((
-        [0, 0, 0, 0],
+        [127, 0, 0, 1],
         args.websocket_server_port,
     )))
     .start();
